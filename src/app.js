@@ -9,7 +9,7 @@ const consultaCliente = require('./consulta-cliente');
 app.use(express.json());
 
 app.get('/', async (req, res) => {
-  res.status(200).send('Bootcamp desenvolvedor back end - Tópicos especiais!');
+  res.status(200).send('Bootcamp desenvolvedor back end - Tópicos especiais da XPE!');
 });
 
 app.post(
