@@ -12,6 +12,7 @@ app.get('/', async (req, res) => {
   res.status(200).send('Bootcamp desenvolvedor back end - Tópicos especiais!');
 });
 
+
 app.post(
   '/consulta-credito',
   check('nome', 'Nome deve ser informado').notEmpty(),
