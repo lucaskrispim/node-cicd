@@ -6,6 +6,8 @@ logs/
 *.log
 npm-debug.log*
 
+coverage/
+
 # Diretórios de cache do runtime
 pids/
 *.pid
