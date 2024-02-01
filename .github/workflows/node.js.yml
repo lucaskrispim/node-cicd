@@ -38,7 +38,7 @@ jobs:
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        DOCKER_IMAGE_NAME: seu_usuario_docker_hub/sua_imagem:$(date +%s)
+        DOCKER_IMAGE_NAME: lucaskrispim/nodeimagemteste:$(date +%s)
       run: |
         docker build -t $DOCKER_IMAGE_NAME .
         echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
