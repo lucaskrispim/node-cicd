@@ -14,7 +14,6 @@ app.get('/', async (req, res) => {
 
 app.post(
   '/consulta-credito',
-
   check('nome', 'Nome deve ser informado').notEmpty(),
   check('CPF', 'CPF deve ser informado').notEmpty(),
   check('valor', 'O valor deve ser um número').notEmpty().isFloat(),
