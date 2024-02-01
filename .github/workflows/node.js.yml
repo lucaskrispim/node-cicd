@@ -43,3 +43,6 @@ jobs:
         docker build -t $DOCKER_IMAGE_NAME .
         echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
         docker push $DOCKER_IMAGE_NAME
+
+    - name: Trigger deployment
+      run: curl -X POST ${{ secrets.trigger_url }}
