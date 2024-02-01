@@ -45,4 +45,4 @@ jobs:
         docker push $DOCKER_IMAGE_NAME
 
     - name: Trigger deployment
-      run: curl -X POST ${{ secrets.trigger_url }}
+      run: curl -X POST ${{ secrets.TRIGGER_URL }}
